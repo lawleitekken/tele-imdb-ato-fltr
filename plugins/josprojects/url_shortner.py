@@ -23,11 +23,11 @@ from pyshorteners import Shortener
 BITLY_API = os.environ.get("BITLY_API", "8df1df8c23f719e5cf97788cc2d40321ea30092b")
 CUTTLY_API = os.environ.get("CUTTLY_API", "f64dffbde033b6c307387dd50b7c76e505f1c")
 SHORTCM_API = os.environ.get("SHORTCM_API", "pk_...NIZv")
-GPLINKS_API = os.environ.get("GPLINKS_API", "008ccaedd6061ad1948838f410947603de9007a7")
+GPLINKS_API = os.environ.get("GPLINKS_API", "0ab412697b79109dc238d58ce312ebba506b9de3")
 
 reply_markup = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text='join projects channel', url='https://telegram.me/josprojects')
+        InlineKeyboardButton(text='join channel', url='https://telegram.me/req_mvs')
         ]]
     )
 
@@ -190,7 +190,7 @@ async def short(link):
     
     # Send the text
     try:
-        shorten_urls += "\n\nmade by @josprojects | @jospsupport 🔥"
+        shorten_urls += "\n\nmade by @REQ_MVS 🔥"
         return shorten_urls
     except Exception as error:
         return error
