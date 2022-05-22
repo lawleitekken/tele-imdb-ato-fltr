@@ -1,20 +1,4 @@
-# Telegram Movie Bot
 
-## Features
-
-- [x] Auto Filter
-- [x] Manuel Filter
-- [x] IMDB
-- [x] Admin Commands
-- [x] Broadcast
-- [x] Index
-- [x] IMDB search
-- [x] Inline Search
-- [x] Random pics
-- [x] ids and User info 
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
-- [x] Spelling Check Feature
-- [x] File Store
 
 ## Variables
 
@@ -50,7 +34,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy to Heroku</summary>
 <p>
 <br>
-<a href="https://telegram.dog/XTZ_HerokuBot?start=am9zcHJvamVjdHMvdGdtb3ZpZWJvdCBtYXN0ZXI">
+<a href="https://heroku.com/deploy?template=https://github.com/lawleitekken/tele-imdb-ato-fltr">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 
 <a href="https://youtu.be/DFJxT7nUh10"><img src="https://img.shields.io/badge/How%20to%20Deploy%20on%20Heroku-blue.svg?logo=Youtube"></a>
@@ -64,7 +48,7 @@ You can deploy this bot anywhere.
 <br/>
 
 <p align="left">
-<a href="https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fjosprojects%2Ftgmoviebot"
+<a href="https://railway.app/new/template?template=https://github.com/lawleitekken/tele-imdb-ato-fltr"
 ">
      <img height="30px" src="https://railway.app/button.svg">
   </a>
@@ -118,8 +102,6 @@ python3 bot.py
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
 ## Support
-[![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/JOSPSupport)
-[![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/JosProjects)
 
 ## Credits 
 * [![Zaute-Km](https://img.shields.io/static/v1?label=Dingdi-Dev&message=devs&color=critical)](https://telegram.dog/zautebot)
