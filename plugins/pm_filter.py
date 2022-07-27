@@ -454,13 +454,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('New Releases', url='https://t.me/+zTEnkJUrwu0zYTll')
+            InlineKeyboardButton('New Releases List', url='https://t.me/+zTEnkJUrwu0zYTll')
             ],[
-            InlineKeyboardButton('Telugu', url='https://t.me/+IW5RgfHBKBVjMWNl'),
-            InlineKeyboardButton('Tamil',url='https://t.me/+NoZY7VZlvFxjZmQ1')
+            InlineKeyboardButton('Telugu List', url='https://t.me/+6sfld8lOoGNiZThl'),
+            InlineKeyboardButton('Tamil List',url='https://t.me/+mcvLWVyb-QQ3NWY9')
             ],[
-            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+g3vrbWWOz4IzZmNl'),
-            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+kRwV2nAqpDVjYzM9')
+            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+9wEx8VaRPkkyMjU1'),
+            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+wXXQPlR2dlpmNGZl')
+            ],[
+            InlineKeyboardButton('Web Series List', url='https://t.me/+OG8Qp5ntlBw3ZjY9')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
