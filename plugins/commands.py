@@ -43,13 +43,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('New Releases', url='https://t.me/+zTEnkJUrwu0zYTll')
+            InlineKeyboardButton('New Releases List', url='https://t.me/+zTEnkJUrwu0zYTll')
             ],[
-            InlineKeyboardButton('Telugu', url='https://t.me/+IW5RgfHBKBVjMWNl'),
-            InlineKeyboardButton('Tamil',url='https://t.me/+NoZY7VZlvFxjZmQ1')
+            InlineKeyboardButton('Telugu List', url='https://t.me/+6sfld8lOoGNiZThl'),
+            InlineKeyboardButton('Tamil List',url='https://t.me/+mcvLWVyb-QQ3NWY9')
             ],[
-            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+g3vrbWWOz4IzZmNl'),
-            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+kRwV2nAqpDVjYzM9')
+            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+9wEx8VaRPkkyMjU1'),
+            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+wXXQPlR2dlpmNGZl')
+            ],[
+            InlineKeyboardButton('Web Series List', url='https://t.me/+OG8Qp5ntlBw3ZjY9')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -89,13 +91,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('New Releases', url='https://t.me/+zTEnkJUrwu0zYTll')
+            InlineKeyboardButton('New Releases List', url='https://t.me/+zTEnkJUrwu0zYTll')
             ],[
-            InlineKeyboardButton('Telugu', url='https://t.me/+IW5RgfHBKBVjMWNl'),
-            InlineKeyboardButton('Tamil',url='https://t.me/+NoZY7VZlvFxjZmQ1')
+            InlineKeyboardButton('Telugu List', url='https://t.me/+6sfld8lOoGNiZThl'),
+            InlineKeyboardButton('Tamil List',url='https://t.me/+mcvLWVyb-QQ3NWY9')
             ],[
-            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+g3vrbWWOz4IzZmNl'),
-            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+kRwV2nAqpDVjYzM9')
+            InlineKeyboardButton('Hollywood Dubbed', url='https://t.me/+9wEx8VaRPkkyMjU1'),
+            InlineKeyboardButton('Kannada & Malayalam', url='https://t.me/+wXXQPlR2dlpmNGZl')
+            ],[
+            InlineKeyboardButton('Web Series List', url='https://t.me/+OG8Qp5ntlBw3ZjY9')
             ],[
             InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
         ]]
@@ -374,7 +378,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('Piracy Is Crime')
+    await message.answer('Watch Movies In Theatres')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
